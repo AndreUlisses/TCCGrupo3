@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h2>Menu</h2></div>
+        
+        <button type="button" onclick="javascritp:UsuarioCadastro();">Abrir Cadastro Usuário</button>
+        
+        
+        <form method="post" name="frmPrincipal" id="frmPrincipal" action="Servlet">
+            <input type="hidden" name="txtObjeto" id="txtObjeto" value="">
+            <input type="hidden" name="txtMetodo" id="txtMetodo" value="">
+        </form>
+        
+        <script>
+            
+            function UsuarioCadastro(){
+               document.getElementById("txtObjeto").value = 'Usuario';
+               document.getElementById("txtMetodo").value = 'Cadastrar';
+               document.getElementById("frmPrincipal").submit();
+            }
+            
+        </script>
+        
+    </body>
+</html>
