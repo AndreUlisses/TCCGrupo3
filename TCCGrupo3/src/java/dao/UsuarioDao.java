@@ -1,7 +1,7 @@
-package DAO1;
+package dao;
 
-import Entidade1.Usuario;
-import Conexao1.ConnectionManager;
+import conexao.ConnectionManager;
+import entidade.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,8 +9,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsuarioDAO1 {
-    
+public class UsuarioDao {
+
     public int salvar(Usuario usuario) {
         
         //inicializando o retorno da função, caso tenha algum problema deve ser retornar o valor -1
@@ -62,7 +62,7 @@ public class UsuarioDAO1 {
         return resultado;
     }
 
-    public boolean deletar(Usuario usuario) {
+    public boolean excluir(Usuario usuario) {
 
         boolean resultado = false;
 
@@ -89,7 +89,7 @@ public class UsuarioDAO1 {
         return resultado;
     }
 
-    public Usuario GetById(int id) {
+    public Usuario editar(int id) {
 
         Usuario usuario = new Usuario();
         
@@ -157,4 +157,5 @@ public class UsuarioDAO1 {
             
         }
     }
+
 }

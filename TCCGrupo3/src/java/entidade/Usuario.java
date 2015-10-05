@@ -1,4 +1,4 @@
-package Entidade1;
+package entidade;
 
 public class Usuario {
 
