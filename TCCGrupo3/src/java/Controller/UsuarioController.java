@@ -1,7 +1,7 @@
 package Controller;
 
-import DAO.UsuarioDAO;
-import Entidade.Usuario;
+import DAO1.UsuarioDAO1;
+import Entidade1.Usuario;
 import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -24,7 +24,7 @@ public class UsuarioController {
         usuario.setEmail(request.getParameter("txtEmail"));
         usuario.setSenha(request.getParameter("txtSenha"));
 
-        UsuarioDAO usuarioDao = new UsuarioDAO();
+        UsuarioDAO1 usuarioDao = new UsuarioDAO1();
         if (usuarioDao.salvar(usuario) == -1) {
             RequestDispatcher rd = request.getRequestDispatcher("mensagemErro.jsp");
             rd.forward(request, response);

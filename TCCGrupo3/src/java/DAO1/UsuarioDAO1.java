@@ -1,7 +1,7 @@
-package DAO;
+package DAO1;
 
-import Entidade.Usuario;
-import conexao.ConnectionManager;
+import Entidade1.Usuario;
+import Conexao1.ConnectionManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UsuarioDAO {
+public class UsuarioDAO1 {
     
     public int salvar(Usuario usuario) {
         
