@@ -1,4 +1,4 @@
-package Servlet1;
+package servlet;
 
 import facade.UsuarioFacade;
 import java.io.IOException;
